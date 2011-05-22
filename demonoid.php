@@ -30,12 +30,14 @@
 			));
 
 			$ch = curl_init();
-			curl_setopt($ch, CURLOPT_URL, 'https://www.demonoid.me/account_handler.php');
-			curl_setopt($ch, CURLOPT_POST, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $postInfo);
-			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-			curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
-			curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie);
+			curl_setopt_array($ch, array(
+				CURLOPT_URL => 'https://www.demonoid.me/account_handler.php',
+				CURLOPT_POST => true,
+				CURLOPT_POSTFIELDS => $postInfo,
+				CURLOPT_FOLLOWLOCATION => true,
+				CURLOPT_COOKIEJAR => $cookie,
+				CURLOPT_COOKIEFILE => $cookie
+			));
 
 			curl_exec($ch);
 			curl_close($ch);
