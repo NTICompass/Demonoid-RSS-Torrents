@@ -7,7 +7,7 @@ It does this by changing the link to point to this script which will login to de
 ## Pre-Setup ##
 
 First things first, you must have a demonoid account for this to work.
-Your server will need to have PHP5, cURL, SimpleXML, and DOMDocument to use this script.
+Your server will need to have PHP >= 5.2.1, cURL, and DOMDocument to use this script.
 
 ## Setup ##
 

@@ -1,8 +1,7 @@
 <?php if(empty($_SERVER["PATH_INFO"])) exit;
 	$get = explode('/', trim($_SERVER["PATH_INFO"],'/'));
 	if(count($get) == 2){
-		$cookie = '/tmp/cookies.txt';
-		@unlink($cookie);
+		$cookie = tempnam(sys_get_temp_dir(), 'cookies');
 		header('Content-type: application/x-bittorrent');
 		// Link is in this format:
 		// http://www.demonoid.me/files/details/xxx/yyy
@@ -40,6 +39,7 @@
 
 			curl_exec($ch);
 			curl_close($ch);
+			unlink($cookie);
 			exit;
 		}
 	}
