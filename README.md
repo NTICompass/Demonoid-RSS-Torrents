@@ -1,3 +1,6 @@
+Demonoid RSS Torrent Downloader
+===============================
+
 ## README ##
 
 This script gets a user's RSS feed from [demonoid][1] and changes the links to point to the actual torrent file instead of just the torrent page.
