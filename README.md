@@ -25,6 +25,6 @@ To use this script, place it on your webserver somewhere.  Then in the same fold
 
 ## Downloading Torrents ##
 
-Normally, a user's RSS feed is `http://www.demonoid.me/rss/users/USERNAME.xml`.  Instead of using that URL, use `http://YOURSERVER/path/to/demonoid.php/USERNAME`.  The links will be changed from the torrent page (`http://www.demonoid.me/files/details/xxx/yyy`) to this script (`http://YOURSERVER/path/to/demonoid.php/xxx/yyy`).  These links will be direct links to the torrent files (the PHP script will login to demonoid, and stream the torrent file).
+Normally, a user's RSS feed is `http://www.demonoid.me/rss/users/USERNAME.xml`.  Instead of using that URL, use `http://YOURSERVER/path/to/demonoid.php/USERNAME`.  The links in the returned RSS will be changed from the torrent page (`http://www.demonoid.me/files/details/xxx/yyy`) to this script (`http://YOURSERVER/path/to/demonoid.php/xxx/yyy`).  These links will be direct links to the torrent files (the PHP script will login to demonoid, and stream the torrent file).
 
   [1]: http://demonoid.me
