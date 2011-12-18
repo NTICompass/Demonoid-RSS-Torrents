@@ -26,7 +26,7 @@
 			$postInfo = array_merge($postInfo, array(
 				'Submit' => 'Submit',
 				'returnpath' => $torrent,
-				'withq' => 0
+				'withq' => 1
 			));
 
 			$ch = curl_init();
